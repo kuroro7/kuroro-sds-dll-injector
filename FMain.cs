@@ -53,7 +53,7 @@ namespace KuroroDLLInjector {
             string executablePath = filename;
             string shortFilename = Path.GetFileName(filename);
             string dllName = Path.GetFileName(dllFilename);
-            string functionName = createFunctionName(dllName);
+            string functionName = "DummyFunction";
 
             peFile = new PeFile(executablePath);
 
